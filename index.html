@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ram & Sita — a tiny tale</title>
+  <meta name="description" content="A tiny, pretty website telling a gentle Ram–Sita story." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+<header class="site-header container">
+  <a class="brand" href="#top" aria-label="Home">Ram <span aria-hidden="true">♥</span> Sita</a>
+  <nav>
+    <a href="#story">Story</a>
+    <a href="#lessons">Little Lessons</a>
+    <a href="#credits">Credits</a>
+  </nav>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">☾</button>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Ram &amp; Sita — a tiny tale</h1>
+        <p class="lead">A gentle, kid–friendly retelling in a handful of scenes — soft as lotus petals, bright as Ayodhya lamps.</p>
+        <a class="btn" href="#story">Read the story</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <!-- Simple decorative SVG: lotus & bow -->
+        <svg viewBox="0 0 400 300" role="img" aria-label="Lotus and bow">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#ffd1dc"/>
+              <stop offset="100%" stop-color="#ffe4b5"/>
+            </linearGradient>
+          </defs>
+          <!-- lotus -->
+          <g transform="translate(110,170)">
+            <ellipse cx="90" cy="60" rx="70" ry="18" fill="#f7c9a6"/>
+            <g fill="url(#g1)">
+              <path d="M90 0 C75 25,70 45,90 65 C110 45,105 25,90 0Z"/>
+              <path d="M65 10 C45 30,40 50,65 65 C80 50,78 30,65 10Z"/>
+              <path d="M115 10 C102 30,100 50,115 65 C140 50,135 30,115 10Z"/>
+              <path d="M45 25 C25 45,25 58,50 68 C60 58,60 45,45 25Z"/>
+              <path d="M135 25 C120 45,120 58,130 68 C155 58,155 45,135 25Z"/>
+            </g>
+            <rect x="80" y="60" width="20" height="10" rx="5" fill="#88c999"/>
+          </g>
+          <!-- bow -->
+          <g transform="translate(40,40) scale(0.85)">
+            <path d="M40 200 Q 150 120 40 40" fill="none" stroke="#8b5e3c" stroke-width="8" stroke-linecap="round"/>
+            <path d="M40 200 Q 230 120 40 40" fill="none" stroke="#cc8f52" stroke-width="6" stroke-linecap="round"/>
+            <line x1="40" y1="40" x2="40" y2="200" stroke="#7b4a2a" stroke-width="2"/>
+            <polygon points="38,40 46,40 42,20" fill="#7b4a2a"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="floating lotus" aria-hidden="true">✿</div>
+    <div class="floating diya" aria-hidden="true">🪔</div>
+  </section>
+
+  <section id="story" class="container sections">
+    <h2 class="section-title">The story</h2>
+    <ol class="timeline">
+      <li class="card reveal">
+        <h3>Meeting in Mithila</h3>
+        <p>Prince Ram visits King Janaka’s city with sage Vishwamitra. In the garden, he sees Sita — grace meeting valor, as natural as morning meeting the sun.</p>
+      </li>
+      <li class="card reveal">
+        <h3>The Swayamvara</h3>
+        <p>Many princes attempt the mighty bow. Ram lifts it with quiet humility — <em>crack!</em> — and Sita garlands him, eyes bright as lamp flames.</p>
+      </li>
+      <li class="card reveal">
+        <h3>Paths of Dharma</h3>
+        <p>Life turns and duty calls. Ram, Sita, and Lakshman walk into the forest together, carrying courage, care, and laughter in equal bundles.</p>
+      </li>
+      <li class="card reveal">
+        <h3>Search &amp; Song</h3>
+        <p>When storms arrive, friends gather — Hanuman leaps, the vanaras cheer. Hope travels across the sea, carried by devotion.</p>
+      </li>
+      <li class="card reveal">
+        <h3>Lights of Ayodhya</h3>
+        <p>After trials, love finds home. The city glows with diyas; hearts glow with lessons — kindness, patience, and steadfastness.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="lessons" class="lessons">
+    <div class="container">
+      <h2 class="section-title">Little lessons</h2>
+      <div class="grid">
+        <article class="note reveal">
+          <h3>Gentleness is strength</h3>
+          <p>Ram’s quiet steadiness and Sita’s calm courage teach that true strength is tender.</p>
+        </article>
+        <article class="note reveal">
+          <h3>Walk with purpose</h3>
+          <p>Even in the forest, they move with clarity — choosing right, not easy.</p>
+        </article>
+        <article class="note reveal">
+          <h3>Love is light</h3>
+          <p>Like rows of diyas, love brightens every step when it’s guided by dharma.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="credits" class="container sections fineprint">
+    <p>Built with ❤ for a tiny story demo. Fonts: Playfair Display &amp; Inter. No external data used.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Ram &amp; Sita — Tiny Tale</p>
+  </div>
+</footer>
+</body>
+</html>

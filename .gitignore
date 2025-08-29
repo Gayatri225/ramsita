@@ -1,0 +1,24 @@
+# secrets
+*.pem
+*.key
+*.crt
+.env
+.env.*
+
+# ssh
+id_rsa*
+id_ed25519*
+
+# aws & tooling
+.aws/
+aws-exports.js
+
+# node / web builds
+node_modules/
+dist/
+build/
+
+# editor / OS
+.DS_Store
+.idea/
+.vscode/
